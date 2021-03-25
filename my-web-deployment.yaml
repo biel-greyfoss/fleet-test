@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my_web
+spec:
+  replicas: 3
+    spec:
+      containers:
+      - name: my_web_container
+        image: gcr.io/google-samples/gb-frontend:v4
+        ports:
+        - containerPort: 8080
