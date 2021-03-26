@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web
+  name: web-helloworld
 spec:
   selector:
     matchLabels:
       app: web-app
-      #role: slave
+      role: slave
       tier: backend
   replicas: 2
   template:
     metadata:
       labels:
         app: web-app
-        #role: slave
+        role: slave
         tier: backend
     spec:
       containers:
-      - name: container
+      - name: slave
         image: 1148541663/test-demo-public
         resources:
           requests:
