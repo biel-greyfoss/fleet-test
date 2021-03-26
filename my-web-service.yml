@@ -2,7 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   name: my_web
+  labels:
+    app: hello_world
+    tier: my_web
 spec:
   type: NodePort
   ports:
-  - port: 8000
+  - port: 9000
+  selector:
+    app: hello_world
+    tier: my_web
