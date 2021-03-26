@@ -1,27 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web-helloworld
+  name: helloworld-deployment
+  labels:
+    app: helloworld
 spec:
   selector:
     matchLabels:
-      app: web-app
-      role: slave
-      tier: backend
+      app: helloworld
   replicas: 2
   template:
     metadata:
       labels:
-        app: web-app
-        role: slave
-        tier: backend
+        app: helloworld
     spec:
       containers:
-      - name: slave
+      - name: helloworld
         image: 1148541663/test-demo-public
-        resources:
-          requests:
-            cpu: 100m
-            memory: 100Mi
+        #resources:
+        #  requests:
+        #   cpu: 100m
+        #   memory: 100Mi
         ports:
         - containerPort: 9000
