@@ -11,6 +11,6 @@ spec:
     targetPort: 9000
   selector:
     app: helloworld
-  externalIPs:
-    - 80.11.12.10
+  #externalIPs:
+  #  - 80.11.12.10
 
