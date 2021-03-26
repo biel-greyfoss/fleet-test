@@ -12,5 +12,5 @@ spec:
   selector:
     app: helloworld
   externalIPs:
-    - 192.168.56.118
+    - 80.11.12.10
 
