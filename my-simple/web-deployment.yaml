@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: web-app
-      role: slave
+   #   role: slave
       tier: backend
   replicas: 2
   template:
@@ -17,7 +17,7 @@ spec:
         tier: backend
     spec:
       containers:
-      - name: slave
+      - name: container
         image: 1148541663/test-demo-public
         resources:
           requests:
