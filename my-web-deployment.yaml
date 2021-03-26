@@ -7,6 +7,6 @@ spec:
     spec:
       containers:
       - name: my_web_container
-        image: gcr.io/google-samples/gb-frontend:v4
+        image: 1148541663/my-fleet-example
         ports:
         - containerPort: 8080
