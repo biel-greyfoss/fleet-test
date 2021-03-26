@@ -11,5 +11,5 @@ spec:
   - port: 9000
   selector:
     app: web-app
-    role: slave
+ #   role: slave
     tier: backend
