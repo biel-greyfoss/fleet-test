@@ -8,7 +8,7 @@ metadata:
     tier: backend
 spec:
   ports:
-  - port: 6379
+  - port: 9000
   selector:
     app: web-app
     role: slave
