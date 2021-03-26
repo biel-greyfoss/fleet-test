@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: web
+  name: web-helloworld
   labels:
     app: web-app
     role: slave
