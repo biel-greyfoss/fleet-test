@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: helloworld
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -17,9 +17,9 @@ spec:
       containers:
       - name: helloworld
         image: 1148541663/test-demo-public
-        #resources:
-        #  requests:
-        #   cpu: 100m
-        #   memory: 100Mi
+        resources:
+          requests:
+           cpu: 100m
+           memory: 100Mi
         ports:
         - containerPort: 9000
