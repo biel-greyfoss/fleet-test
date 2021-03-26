@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: my_web_container
-        image: 1148541663/my-fleet-example
+        image: 1148541663/test-demo-public
         ports:
         - containerPort: 9000
