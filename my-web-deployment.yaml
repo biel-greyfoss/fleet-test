@@ -3,10 +3,19 @@ kind: Deployment
 metadata:
   name: my_web
 spec:
+ selector:
+    matchLabels:
+      app: hello_world
+      tier: my_web
   replicas: 3
+  template:
+    metadata:
+      labels:
+        app: hello_world
+        tier: my_web
     spec:
       containers:
       - name: my_web_container
         image: 1148541663/my-fleet-example
         ports:
-        - containerPort: 8080
+        - containerPort: 9000
