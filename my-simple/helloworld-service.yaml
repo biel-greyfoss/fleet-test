@@ -5,12 +5,15 @@ metadata:
   labels:
     app: helloworld
 spec:
+  type: NodePort
   ports:
   - protocol: TCP
     port: 9000
     targetPort: 9000
+    nodePort: 30007
   selector:
     app: helloworld
+    
   #externalIPs:
   #  - 80.11.12.10
 
