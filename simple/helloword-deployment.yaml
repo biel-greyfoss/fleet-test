@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: 1148541663/test-demo-public
+        image: 1148541663/test-demo-public:d37122c67dd921246aa07dbbe7726045ff25a897
         resources:
           requests:
            cpu: 100m
