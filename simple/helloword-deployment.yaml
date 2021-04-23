@@ -16,10 +16,12 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: 1148541663/test-demo-public:d37122c67dd921246aa07dbbe7726045ff25a897
+        image: 378043784/helloworld-private:3edebcf
         resources:
           requests:
            cpu: 100m
            memory: 100Mi
         ports:
         - containerPort: 9000
+      imagePullSecrets:
+      - name: dockerhub-registry-key-helloworld
