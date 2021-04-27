@@ -10,7 +10,7 @@ spec:
   - protocol: TCP
     port: 9000
     targetPort: 9000
-    nodePort: 30007
+    nodePort: 30011
   selector:
     app: helloworld
     
