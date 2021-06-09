@@ -7,10 +7,10 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - protocol: TCP
-    port: 9000
+  - port: 9000
     targetPort: 9000
     nodePort: 30011
+    name: http
   selector:
     app: helloworld
     
